@@ -37,11 +37,11 @@ export default defineConfig({
   publicPath: '/picwe-swap/',
   mfsu: false,
   chainWebpack: (config) => {
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      crypto: require.resolve('crypto-browserify'),
-      stream: require.resolve('stream-browserify'),
-      buffer: require.resolve('buffer/'),
-    };
+    config.resolve.fallback
+      .set('crypto', require.resolve('crypto-browserify'))
+      .set('stream', require.resolve('stream-browserify'))
+      .set('buffer', require.resolve('buffer/'));
+    
+    return config;
   },
 });
