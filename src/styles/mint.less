@@ -1,0 +1,208 @@
+.swap-wrap {
+  padding: 90px 218px;
+
+  .pipi-img {
+    width: 367px;
+    height: 367px;
+    background-image: url('@/assets/pipi.png');
+    margin-top: 85px;
+    margin-right: 85px;
+  }
+
+  .page-title {
+    font-size: 70px;
+    margin-bottom: 46px;
+  }
+
+  .common-card {
+    padding: 30px 40px;
+    box-sizing: border-box;
+    width: 444px;
+    margin-right: 26px;
+    margin-bottom: 56px;
+
+    &.c-2 {
+      width: 520px;
+    }
+
+    .card-title {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .text {
+      font-size: 22px;
+    }
+  }
+
+  .form-box {
+    background: #FFFDF5;
+    border-radius: 22px;
+    border: 2px solid #151515;
+    padding: 34px;
+    width: 771px;
+
+    .tabs {
+      margin-bottom: 40px;
+
+      .tab-item {
+        cursor: pointer;
+        background: #FFF5BE;
+        border-radius: 10px;
+        border: 2px solid #151515;
+        width: 124px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        margin-right: 23px;
+
+        &.active {
+          background-color: #FFDD24;
+          border-bottom: 6px solid #000;
+          border-right: 6px solid #000;
+        }
+      }
+    }
+
+    .action-box {
+      // width: 712px;
+      padding: 25px 34px 22px 39px;
+      box-sizing: border-box;
+      background-color: #FFF5BE;
+      border-radius: 10px;
+      border: 2px solid #151515;
+
+      &.mb-12 {
+        margin-bottom: 12px;
+      }
+
+      .action-box-title {
+        font-size: 22px;
+        margin-bottom: 13px;
+      }
+
+      .action-cell {
+        margin-bottom: 8px;
+
+        .coin-select {
+          cursor: pointer;
+
+          .coin-img {
+            width: 50px;
+            height: 50px;
+            margin-right: 16px;
+            background-image: url('@/assets/MOVE.png');
+          }
+
+          .coin-name {
+            font-size: 22px;
+            margin-right: 26px;
+          }
+
+        }
+
+        .select-icon {
+          cursor: pointer;
+          width: 10px;
+          height: 17px;
+          background-image: url('@/assets/next.png');
+        }
+
+        .my-input {
+
+          // width: 100%;
+          .t-input {
+            border: 0;
+            background: transparent;
+            font-size: 36px;
+            color: #000 !important;
+          }
+        }
+      }
+
+      .computed-num {
+        font-size: 18px;
+        color: #252525;
+        line-height: 34px;
+      }
+    }
+
+    .exchange-img {
+      width: 56px;
+      height: 56px;
+      background-image: url('@/assets/exchange.png');
+      left: calc(50% - 28px);
+      top: calc(50% - 28px);
+      cursor: pointer;
+    }
+
+    .route-box {
+      margin-bottom: 41px;
+      // width: 100%;
+      overflow-x: auto;
+      padding: 22px 40px;
+      background: #F1EED9;
+      border-radius: 10px;
+
+      .text {
+        color: #565341;
+        margin-right: 49px;
+        flex-shrink: 0;
+      }
+
+      .r-item {
+        flex-shrink: 0;
+
+        .img {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 3px;
+          background-image: url('@/assets/MOVE.png');
+        }
+
+        .val {
+          font-size: 16px;
+        }
+      }
+
+      .next-arrow {
+        flex-shrink: 0;
+        margin: 0 12px;
+        width: 16px;
+        height: 14px;
+        background-image: url('@/assets/right.png');
+      }
+    }
+
+
+  }
+
+  .primary-btn {
+    font-size: 22px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 2px solid #000 !important;
+    border-bottom: 6px solid #000 !important;
+    border-right: 6px solid #000 !important;
+  }
+}
+
+.modal-content {
+  color: #000;
+
+  .coin-item {
+    padding: 12px 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #b9a220;
+    }
+
+    .coin-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+    }
+  }
+}

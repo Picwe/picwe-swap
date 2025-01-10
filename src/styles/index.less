@@ -1,0 +1,520 @@
+.web-page {
+  // width: 1920px;
+  // height: 1080px;
+  // background-image: url('@/assets/bg.png');
+  // background-size: 100% 100%;
+  background-color: rgba(255, 221, 36, 1);
+  min-height: 100%;
+}
+
+
+
+/*滚动条样式*/
+div::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px #8b8b8b33;
+  background: #8b8b8b33;
+}
+
+div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8b8b8b33;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px #8b8b8b33;
+  background: #8b8b8b33;
+}
+
+html::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8b8b8b33;
+  border-radius: 0;
+  background: #8b8b8b33;
+}
+
+
+@font-face {
+  font-family: 'PrimaryFont';
+  /* 自定义字体名称 */
+  src: url('@/assets/font/Hanchansans-Medium.ttf') format('woff2');
+  font-weight: normal;
+  /* 字体的粗细 */
+  font-style: normal;
+  /* 字体的样式，例如 normal、italic */
+}
+
+@font-face {
+  font-family: 'PrimaryFontBlack';
+  /* 自定义字体名称 */
+  src: url('@/assets/font/SAF-2.otf') format('woff2');
+  font-weight: normal;
+  /* 字体的粗细 */
+  font-style: normal;
+  /* 字体的样式，例如 normal、italic */
+}
+
+.primary-font {
+  font-family: 'PrimaryFont' !important;
+}
+
+.primary-font-black {
+  font-family: 'PrimaryFontBlack' !important;
+}
+
+
+
+.table-wrap {
+  box-sizing: content-box;
+
+  &.token-table {
+    width: 660px;
+  }
+
+  .t-table {
+    background-color: transparent;
+
+    .t-table__content {
+      border: 1px solid #383318;
+      border-radius: 16px;
+
+      .t-table__header {
+
+        tr,
+        th {
+          background: #fff;
+          color: #000;
+          font-weight: 800;
+          font-size: 13px;
+          border: 0;
+          border-bottom: 1px solid #383318;
+        }
+      }
+    }
+
+    .t-table__scroll-bar-divider {
+      border: 0;
+    }
+
+    .t-table__empty-row {
+      background-color: transparent;
+
+      .t-table__empty {
+        color: #000;
+      }
+    }
+  }
+
+  .table-row {
+    background-color: transparent;
+    color: #000;
+
+    td {
+      border: 0;
+      border-bottom: 1px solid #383318;
+    }
+  }
+
+  .t-pagination__total {
+    color: var(--td-brand-color);
+  }
+
+  .t-pagination__btn {
+    color: var(--td-brand-color);
+  }
+}
+
+.table-title {
+  color: #CFC79B;
+  font-size: 24px;
+  margin: 46px 0 18px 0;
+}
+
+.form-wrap {
+  .t-form {
+    .t-form__item {
+      margin-bottom: 16px;
+    }
+
+    .t-form__label {
+      color: #A99C77;
+    }
+
+    .t-input {
+      background-color: #26241C;
+      border: 1px solid #7E7353;
+      height: 44px;
+      border-radius: 4px;
+
+      .t-input__inner {
+        color: #FFF6C7;
+        height: 44px;
+
+
+        &::placeholder {
+          color: rgba(255, 246, 199, 0.5);
+        }
+      }
+    }
+
+    .t-textarea {
+
+      .t-textarea__inner {
+        background-color: #26241C;
+        border: 1px solid #7E7353;
+        border-radius: 4px;
+        color: #FFF6C7;
+      }
+    }
+
+    .trade-btn {
+      width: 100%;
+      height: 48px;
+      background-color: #FFD900;
+      border-radius: 4px;
+      line-height: 48px;
+      margin-top: 40px;
+
+      .t-button__text {
+        color: #2F2D22;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+
+    .text-btn {
+      height: 48px;
+      line-height: 48px;
+
+      &:hover {
+        background-color: #7E7353;
+        border-color: #FFD900;
+      }
+    }
+  }
+
+  .t-upload__single-display-text {
+    color: #CFC79B !important;
+
+    .t-upload__single-name {
+      color: #CFC79B !important;
+
+    }
+
+    .t-icon {
+      color: #CFC79B !important;
+    }
+
+  }
+
+  .t-upload__card-name {
+    color: #CFC79B !important;
+  }
+
+  .t-upload__card {
+    .t-upload__card-container {
+      background-color: #26241C;
+      border: 1px dashed #7E7353;
+    }
+
+    .t-upload__image-add {
+      .t-icon {
+
+        color: #CFC79B !important;
+      }
+
+      .t-upload__add-text {
+        color: #CFC79B !important;
+      }
+    }
+  }
+
+  .move-icon {
+    width: 26px;
+    height: 26px;
+    background-image: url('@/assets/MOVE.png');
+  }
+}
+
+.t-popup__content {
+  background-color: #26241C !important;
+
+  .t-select-option {
+    color: #FFF6C7 !important;
+  }
+
+  .t-select-option.t-is-selected:not(.t-is-disabled) {
+    color: #000 !important;
+  }
+
+  .t-select-option:not(.t-is-disabled):not(.t-is-selected):hover {
+    color: #000 !important;
+  }
+}
+
+.t-select .t-fake-arrow {
+  color: rgba(103, 95, 71, 1) !important;
+}
+
+.t-select .t-fake-arrow--active {
+  color: rgba(255, 217, 0, 1) !important;
+}
+
+body #root .primary-btn {
+  background-color: #FFDD24;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #2F2D22;
+  font-size: 14px;
+  // font-family: 'PrimaryFont';
+
+}
+
+.t-loading__gradient-conic {
+  background: conic-gradient(from 90deg at 50% 50%, #000000 0deg, currentcolor 360deg) !important;
+}
+
+.page-header {
+  padding: 40px 135px 20px 74px;
+  border-bottom: 2px solid #000;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: #FFDD24;
+
+
+  .logo {
+    width: 133px;
+    height: 34px;
+    background-image: url('@/assets/logo.png');
+    cursor: pointer;
+  }
+
+  .navi-menu {
+    padding-left: 158px;
+
+    .item {
+      margin-right: 120px;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 14px 17px;
+      border-radius: 25px;
+
+      &:hover {
+        color: #EDD146;
+        background-color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+          color: #EDD146;
+        }
+      }
+
+      &.active {
+        color: #EDD146;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .connect-btn {
+    width: 130px;
+    box-sizing: border-box;
+    padding: 0;
+    height: 40px;
+  }
+}
+
+
+
+.primary-color {
+  color: #FFDD24 !important;
+}
+
+.primary-bg {
+  background-color: #FFDD24 !important;
+}
+
+
+
+.moveFun-modal {
+  .t-dialog {
+    background-color: #FFDD24;
+    border: 1px solid #CFC79B;
+    padding: 32px 27px;
+
+    .t-dialog__body {
+      padding: 0;
+    }
+  }
+}
+
+.nodate-empty-image {
+  .image {
+    width: 160px;
+    height: 118px;
+    background-image: url('@/assets/wushuju.png');
+  }
+
+  .text {
+    color: #FFF9D7;
+    margin-top: 47px;
+    font-size: 16px;
+  }
+}
+
+.wallet-button {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 2px solid #000;
+  border-bottom: 5px solid #000;
+  font-weight: bold;
+  font-family: 'PrimaryFont' !important;
+
+  &:hover {
+    color: var(--td-brand-color-hover) !important;
+    border-color: var(--td-brand-color-hover) !important;
+  }
+}
+
+.t-pagination__btn {
+  border: 1px solid #302E25;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  color: #9C956F;
+}
+
+.t-pagination__pager {
+  .t-pagination__number {
+    background-color: transparent;
+    color: #FFF9D7;
+    border-color: #302E25;
+
+    &.t-is-current {
+      background-color: #EDD146;
+    }
+  }
+}
+
+@keyframes rainbow-shadow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  }
+
+  14% {
+    box-shadow: 0 0 20px rgba(255, 128, 0, 0.7);
+  }
+
+  28% {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
+  }
+
+  42% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+  }
+
+  57% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+  }
+
+  71% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+  }
+
+  85% {
+    box-shadow: 0 0 20px rgba(128, 0, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  }
+}
+
+
+
+@keyframes progress-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 39px 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  /* 初始位置向下偏移 */
+  transition: opacity 1s ease, transform 1s ease;
+  /* 过渡效果 */
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  /* 变为可见 */
+  transform: translateY(0);
+  /* 返回到原位置 */
+}
+
+.animation-fade {
+  animation-name: fade;
+  animation-duration: 1.8s;
+  animation-timing-function: linear
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.white-shadow-text {
+  color: #fff;
+  text-shadow:
+    1px 1px 2px black,
+    /* 上右黑色阴影 */
+    -1px -1px 2px black,
+    /* 下左黑色阴影 */
+    1px -1px 2px black,
+    /* 上左黑色阴影 */
+    -1px 1px 2px black;
+  /* 下右黑色阴影 */
+  // -webkit-text-stroke: 2px #000;
+  font-weight: 900;
+}
+
+.common-card {
+  background-color: #FFF5BE;
+  border-radius: 22px;
+}
